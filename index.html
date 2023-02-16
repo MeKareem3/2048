@@ -1,1 +1,127 @@
+<!DOCTYPE html>
 
+<html>
+
+    <head>
+
+        <title>2048 bot</title>
+
+        <link rel = "icon" href = "2048.png"></link>
+
+        <link href = "style.css" rel = "stylesheet" type = "text/css"></link>
+
+        <meta name = "robots" content = "noindex">
+
+    </head>
+
+    <!-- Data and scripts -->
+
+    <script src = "shifts.js"></script>
+    <script src = "utility.js"></script>
+    <script src = "game.js"></script>
+    <script src = "bot.js"></script>
+    <script src = "randbot.js"></script>
+    <script src = "bot_control.js"></script>
+
+    <body>
+
+        <div id = "dev_by">
+
+            Developed by eco27
+
+        </div>
+
+        <div id = "container">
+
+            <div id = "header">
+
+                <div id = "title">2048</div>
+
+                <div id = "scores">
+
+                    <div class = "score" id = "score">
+
+                        <div class = "scoreTitle">SCORE</div>
+                        <div class = "scoreValue" id = "score_value">0</div>
+
+                    </div>
+
+                    <div class = "score" id = "highscore">
+
+                        <div class = "scoreTitle">HIGHSCORE</div>
+                        <div class = "scoreValue" id = "highscore_value">0</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id = "desc">Join the numbers and get to the <strong>2048 tile!</strong></div>
+
+            <button id = "new_game">New Game</button>
+            <button id = "bot_config">Bot Config</button>
+
+            <div id = "bot_window">
+
+                <div id = "rand_word">Random Moves</div>
+
+                <label id = "rand_toggle" class="b-contain"><input id = "r_check" type="checkbox"><div class="b-input"></div></label>
+
+                <div id = "rand_bot">Random Bot</div>
+
+                <label id = "randbot_toggle" class="b-contain"><input id = "b_check" type="checkbox"><div class="b-input"></div></label>
+                
+                <div id = "depth">
+
+                    <div id = "depth_word">Max Depth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Max 5)</div>
+                    <input id = "depth_input" type = "text"></input>
+
+                </div>
+
+                <button id = "start_bot">Start Bot</button>
+
+            </div>
+
+            <div id = "game">
+
+                <div>
+                    
+                    <div class = "square r0 c0"></div>
+                    <div class = "square r0 c1"></div>
+                    <div class = "square r0 c2"></div>
+                    <div class = "square r0 c3"></div>
+
+                    <div class = "square r1 c0"></div>
+                    <div class = "square r1 c1"></div>
+                    <div class = "square r1 c2"></div>
+                    <div class = "square r1 c3"></div>
+
+                    <div class = "square r2 c0"></div>
+                    <div class = "square r2 c1"></div>
+                    <div class = "square r2 c2"></div>
+                    <div class = "square r2 c3"></div>
+
+                    <div class = "square r3 c0"></div>
+                    <div class = "square r3 c1"></div>
+                    <div class = "square r3 c2"></div>
+                    <div class = "square r3 c3"></div>
+
+                </div>
+
+                <div id = "tiles"></div>
+
+                <div id = "game_over">
+
+                    <div id = "over_text">Game over!</div>
+                    <div id = "over_dt">Click "New Game" to play again!</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
